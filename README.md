@@ -1,2 +1,2 @@
 # MasterInJava
-This repository contains data structure and core java programs 
+This project is intended for implementation of java concepts
