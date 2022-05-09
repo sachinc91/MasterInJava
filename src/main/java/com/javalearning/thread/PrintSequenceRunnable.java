@@ -1,10 +1,12 @@
 package com.javalearning.thread;
 
-public class PrintSequenceRunnable implements Runnable {
+import java.util.concurrent.locks.ReentrantLock;
+
+public class PrintSequenceRunnable implements Runnable{
     public int PRINT_NUMBERS_UPTO=100;
     static int  number=1;
     int remainder;
-    static Object lock=new Object();
+    static final ReentrantLock lock=new ReentrantLock();
 
     PrintSequenceRunnable(int remainder)
     {
@@ -29,3 +31,5 @@ public class PrintSequenceRunnable implements Runnable {
         }
     }
 }
+
+
